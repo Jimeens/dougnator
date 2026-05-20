@@ -1852,6 +1852,7 @@ ul.social-network li {
 .selector ul:not(.social-network) li{
     font-family: "Sansita";
     font-weight: 700;
+    font-size: 20px;
     list-style: none;
     line-height:40px;
     margin-bottom: 10px;
