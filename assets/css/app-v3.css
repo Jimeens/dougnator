@@ -103,7 +103,7 @@ div#no_script_message {
 /* On a besoin que la div centrale fasse au minimum 600px de haut dans la cas ou la pub est désactivée */
 .row_main {
     min-height: 300px;
-    margin-left: 500px;
+    margin-left: calc(100vw * 0.25);
 }
 
 .font-size-mobile-h1{
