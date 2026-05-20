@@ -103,6 +103,7 @@ div#no_script_message {
 /* On a besoin que la div centrale fasse au minimum 600px de haut dans la cas ou la pub est désactivée */
 .row_main {
     min-height: 300px;
+    margin-left: 500px;
 }
 
 .font-size-mobile-h1{
@@ -1837,7 +1838,10 @@ ul.social-network li {
 
 .database-selection{
     margin: 40px 0 0 0;
-    width: 70%;
+    width: 567px;
+    display: relative;
+    left: 330px;
+    top: 200px;
 }
 
 .selector ul:not(.social-network){
@@ -1854,7 +1858,7 @@ ul.social-network li {
     text-align: center;
     position:relative;
 }
-.selector ul:not(.social-network) li:after{
+/* .selector ul:not(.social-network) li:after{
     content:">>";
     display:block;
     position: absolute;
@@ -1863,7 +1867,7 @@ ul.social-network li {
     top:-1px;
     color:transparent;
     transition: all .1s;
-}
+} */
 
 .selector ul:not(.social-network) li:hover:after{
     right:35px;

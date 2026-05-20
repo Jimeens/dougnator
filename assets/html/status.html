@@ -112,19 +112,28 @@
             <div class="top-separator"></div>
         </header>
         <section id="base-section">
-            <div class="body-section">
-                <div class="container home">
-                    <div class="row">
-                        <div class="bubble-left bubble-home bubble">
-                            <p>Olá, eu sou o Dougnator</p>
+             <div class="body-section">
+                <div class="container">
+                    <div class="row row_main">
+                        <div class="col-md-3">
+                            <div class="akinator">
+                                <div class="akinator-body">
+                                    <img src="/files/serein_2.png" width="603" height="987" alt="akitude-serein_2">
+                                </div>
+                            </div>
                         </div>
-                        <div class="akinator-home">
-                            <img class="body" src="/files/dougnator.png" alt="corps akinator"/>
+                        <div class="col-md-5 my-auto d-flex flex-column">
+                            <div class="bubble-right bubble-database bubble" style="left: 300px; top: 200px;">
+                                <p>Verifiquei aqui no App e descobri uma coisa engraçada</p>
+                            </div>
+                            <div class="database-selection selector dialog-box mx-auto">
+                                <ul>
+                                    <li id="status-pais">Status</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="bubble-right bubble-home bubble">
-                            <p>
-                                Clique em DESCUBRA que vou adivinhar o que seu pai está fazendo!
-                            </p>
+                        <div class="col-md-2 col-md-offset-0 col-sm-2 col-sm-offset-3 col-xs-2 col-xs-offset-3">
+                            <div id="lateral_pub" data-fuse="VREC"></div>
                         </div>
                     </div>
                 </div>
@@ -138,8 +147,8 @@
                         <div class="col-md-8 game-div">
                             
                             <div class="btn-play">
-                                <a href="/assets/html/status.html">
-                                    <span>DESCUBRA</span>
+                                <a href="/index.html">
+                                    <span>JOGAR NOVAMENTE</span>
                                 </a>
                                 <input type="hidden" name="ipcliente" value=""/>
                             </div>
@@ -162,5 +171,22 @@
         <script type="module" src="/assets/js/jquery-3.4.1.min.js"></script>
         <script type="module" src="/assets/bootstrap/js/bootstrap.bundle.js"></script>
         <script type="module" src="/assets/js/app-v3.js"></script>
+        <script>
+            const frases = [
+                "Seu pai TÁ DANDO",
+                "Seu pai TÁ SENTANDO",
+                "Seu pai TÁ REBOLANDO",
+                "Seu pai TÁ MAMANDO",
+                "Seu pai TÁ CHUPANDO",
+                "Seu pai TÁ FODENDO",
+                "Seu pai TÁ TREPANDO",
+                "Seu pai TÁ TRANSANDO",
+                "Seu pai TÁ MAMANDO E REBOLANDO",
+            ];
+
+            const fraseAleatoria = frases[Math.floor(Math.random() * frases.length)];
+
+            document.getElementById("status-pais").textContent = fraseAleatoria;
+        </script>
     </body>
 </html>
